@@ -20,16 +20,6 @@ export class NavBarComponent implements OnInit {
       })
   }
 
-  // menuClickHandler() {
-  //     console.log("it is clicked....");
-  //     const menuIcon = document.querySelector('.hamburger-menu');
-  //     const navbar = document.querySelector(".navbar");
-  //     console.log(menuIcon + " "+ navbar);
-
-  //     menuIcon.addEventListener("click", () => {
-  //         console.log("it is clicked....");
-  //         navbar.classList.toggle("change");
-  //     })
-  // }
+ 
   
 }

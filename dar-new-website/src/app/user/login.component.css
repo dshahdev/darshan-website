@@ -1,0 +1,63 @@
+body {
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    /* padding: 50px 0; */
+    box-sizing: border-box;
+  }
+
+  
+  .header {
+      background-color: burlywood;
+      color: white;
+      margin: 1px auto;
+      padding: .8em;
+      width: 80%;
+      max-width: 1200px;
+      font-size: 20px;
+      letter-spacing:.09em ;
+     
+  }
+
+  .container {
+    background-color: chocolate;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .flex-outer li label {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+
+  .flex-outer li input {
+    padding: 10px;
+    border: none;
+  }
+
+  .flex-outer li button {
+    margin-left: 150px;
+    padding: 8px 16px;
+    border: none;
+    background: rgb(241, 236, 239);
+    color: chocolate;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }

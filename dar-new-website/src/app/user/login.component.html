@@ -1,0 +1,25 @@
+<div class="header">
+    Login
+</div>
+<div class="container">
+
+    <form #loginForm="ngForm" novalidate (ngSubmit)="login(loginForm)" autocomplete="off">
+        <div class="container">
+
+            <ul class="flex-outer">
+                <li>
+                    <label for="first-name">User Name:</label>
+                    <input type="text" id="user-name" placeholder="user name">
+                </li>
+                <li>
+                    <label for="last-name">Password:</label>
+                    <input type="text" id="password" placeholder="password">
+                </li>
+                <li>
+                    <button type="submit">Login</button>
+                    <button type="button">Cancel</button>
+                </li>
+            </ul>
+        </div>
+    </form>
+    </div>
