@@ -18,7 +18,7 @@ body {
   }
 
   .container {
-    background-color: chocolate;
+    background-color: burlywood;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -50,9 +50,15 @@ body {
     padding: 10px;
     border: none;
   }
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
 
   .flex-outer li button {
     margin-left: 150px;
+    margin-bottom: 10px;;
     padding: 8px 16px;
     border: none;
     background: rgb(241, 236, 239);
@@ -60,4 +66,10 @@ body {
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 2px;
+  }
+
+  .message {
+    margin-left: 2em;
+    font-size: 15px;
+   
   }

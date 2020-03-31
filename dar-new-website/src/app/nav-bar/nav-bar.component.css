@@ -14,7 +14,7 @@
 }
 .dis-menu {
     /* border: 1px solid black; */
-    flex-grow: 1;
+    flex-grow: 2;
     /* flex-shrink: inherit; */
 }
 
@@ -31,10 +31,12 @@ nav li {
     list-style-type: none;
     margin: 1em;
 }
+
+
 nav a {
     text-decoration: none;
     font-size: 15px;
-    color: chocolate;;
+    color: chocolate;
     /* font-weight: 300; */
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -50,7 +52,7 @@ nav a {
       position: fixed;
       /* top: 50px; */
       top: 15px;
-      right: 45px;
+      right: 28px;
       cursor: pointer;
       display: flex;
       flex-direction: column;
@@ -125,6 +127,11 @@ nav a {
    }
    .nav-link:hover::before,
    .nav-link:hover::after {
+       transform: scaleX(1);
+   }
+
+   .navbar-link:hover::before,
+   .navbar-link:hover::after {
        transform: scaleX(1);
    }
 
