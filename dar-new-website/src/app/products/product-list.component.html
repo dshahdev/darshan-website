@@ -1,2 +1,31 @@
-<p>product-list works!</p>
-<app-product-view></app-product-view>
+
+
+<div class="box">
+    <div  class="child" *ngFor="let item of items" >
+        <app-product-view #prodView 
+            [itemData]=item
+            [routerLink]="['/product', item.id]"
+            [state]="{Item: item}"
+        >
+        </app-product-view> 
+
+    </div>
+</div>
+<!-- <div   *ngFor="let item of items" > -->
+    <!-- <div class=""> -->
+        <!-- <app-product-view [itemData]=item></app-product-view> -->
+        <!-- <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div> -->
+    <!-- </div> -->
+<!-- </div> -->
+

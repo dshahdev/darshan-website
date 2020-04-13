@@ -6,9 +6,10 @@ body {
 
   
   .header {
-      background-color: burlywood;
+      /* background-color: burlywood; */
+      background-color: #6d3570;
       color: white;
-      margin: 1px auto;
+      margin: 5px auto;
       padding: .8em;
       width: 80%;
       max-width: 1200px;
@@ -18,10 +19,11 @@ body {
   }
 
   .container {
-    background-color: burlywood;
+    background-color: #6d3570;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    color: white;
 }
 .flex-outer li,
   .flex-inner {
@@ -62,10 +64,11 @@ body {
     padding: 8px 16px;
     border: none;
     background: rgb(241, 236, 239);
-    color: chocolate;
+    color: #6d3570;
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 2px;
+    cursor: pointer;
   }
 
   .message {

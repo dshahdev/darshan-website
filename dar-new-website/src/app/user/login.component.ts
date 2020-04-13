@@ -25,6 +25,7 @@ import { Router } from '@angular/router';
         //create a authservice
         this.authService.login(username, password);
         // onclick change the navigation 
+
         this.router.navigate(['/products']);
       } else {
         this.errorMessage = "please enter a username and password";

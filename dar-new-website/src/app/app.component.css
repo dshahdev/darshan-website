@@ -1,5 +1,6 @@
 .testBox {
-    background-color: azure;
-    border: 1px solid #a9acb0;
+    /* background-color: azure; */
+    background-color: #f7eef7;
+    /* border: 1px solid #a9acb0; */
     padding: 10px 20px;
 }

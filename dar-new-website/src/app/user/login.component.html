@@ -1,59 +1,44 @@
-<div class="header">
-    Login
-</div>
-<div class="container">
+<div class="test">
+    <div class="header">
+        Login
+    </div>
+    <div class="container">
 
-    <form #loginForm="ngForm" 
-        novalidate (ngSubmit)="login(loginForm)" 
-        autocomplete="off">
-        <div class="container">
+        <form #loginForm="ngForm" novalidate (ngSubmit)="login(loginForm)" autocomplete="off">
+            <div class="container">
 
-            <ul class="form-group flex-outer">
-                <li>
-                    <label for="first-name">User Name:</label>
-                    <input class="form-control"
-                        type="text" 
-                        id="username" 
-                        placeholder="user name"
-                        required
-                        ngModel
-                        name="userName"
-                        #userNameVar="ngModel"
-                        [ngClass]="{'is-invalid': (userNameVar.touched || userNameVar.dirty) && !userNameVar.valid }">
+                <ul class="form-group flex-outer">
+                    <li>
+                        <label for="first-name">User Name:</label>
+                        <input class="form-control" type="text" id="username" placeholder="user name" required ngModel
+                            name="userName" #userNameVar="ngModel"
+                            [ngClass]="{'is-invalid': (userNameVar.touched || userNameVar.dirty) && !userNameVar.valid }">
                         <div class="invalid-feedback message">
                             <span *ngIf="userNameVar.errors?.required">
                                 User name is required.
-                              </span>
+                            </span>
                         </div>
-                </li>
-                <li>
-                    <label for="last-name">Password:</label>
-                    <input class="form-control"
-                        type="password" 
-                        id="passwordId" 
-                        placeholder="password"
-                        required
-                        ngModel
-                        #passwordVar="ngModel"
-                        name="password"
-                        [ngClass]="{'is-invalid': (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid}">
+                    </li>
+                    <li>
+                        <label for="last-name">Password:</label>
+                        <input class="form-control" type="password" id="passwordId" placeholder="password" required
+                            ngModel #passwordVar="ngModel" name="password"
+                            [ngClass]="{'is-invalid': (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid}">
                         <div class="invalid-feedback message">
                             <span *ngIf="userNameVar.errors?.required">
                                 Password is required.
-                              </span>
+                            </span>
                         </div>
-                </li>
-                <li>
-                    <button 
-                        type="submit"
-                        style="width: 80px"
-                        [disabled]="!loginForm.valid">Login</button>
-                    <button type="button">Cancel</button>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <button type="submit" style="width: 80px" [disabled]="!loginForm.valid">Login</button>
+                        <button type="button">Cancel</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="alert alert-danger" *ngIf="errorMessage">
         </div>
-    </form>
-    <div class="alert alert-danger"
-       *ngIf="errorMessage">
     </div>
-    </div>
+
+</div>

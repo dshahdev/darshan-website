@@ -1,0 +1,41 @@
+.navigation {
+    background: rgb(8, 8, 124);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    list-style: none;
+}
+
+.navigation a {
+    list-style-type: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.navigation a:hover {
+    background: rgb(124, 177, 238);
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+@media all and (max-width: 500px) {
+    .navigation {
+        /* flex-direction: column ; */
+        flex-flow: column wrap;
+        padding: 0;
+       
+       
+    }
+    .navigation a {
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3); 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+}

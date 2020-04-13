@@ -6,7 +6,6 @@ import { ProductDetailComponent } from './product-detail.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductViewComponent } from './product-view.component';
 
-
 @NgModule({
   declarations: [
     ProductListComponent,
@@ -18,8 +17,8 @@ import { ProductViewComponent } from './product-view.component';
     CommonModule,
     RouterModule.forChild([
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:id', component: ProductDetailComponent },
-      { path: 'products/:id/edit', component: ProductEditComponent }
+      { path: 'product/:id', component: ProductDetailComponent },
+      { path: 'product/:id/edit', component: ProductEditComponent }
     ])
   ]
 })

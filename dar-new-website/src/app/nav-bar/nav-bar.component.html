@@ -1,12 +1,16 @@
-<nav class="continer">
+<div>
+<nav id="navbar" class="continer">
     <div class=" logo">
-        <h1>CSS Logo </h1>
+        CSS Logo
     </div>
     <div class="menu">
         <ul class="main-menu">
             <li><a [routerLink]="['/welcome']">Home</a></li>
             <li><a [routerLink]="['/products']">Product List</a></li>
-            <li><a href="#">Add Products</a></li>
+            <li><a [routerLink]="['/layout-one']">Layout-1</a></li>
+            <li><a [routerLink]="['/layout-two']">Layout-2</a></li>
+            <li><a [routerLink]="['/layout-three']">Layout-3</a></li>
+
         </ul>
     </div>
     <div class="dis-menu">
@@ -14,28 +18,31 @@
             <li *ngIf="isLoggedIn">
                 <a>Welcome {{ userName}}</a>
             </li>
-            <li><a href="#">About</a></li>
+            <li><a [routerLink]="['/about']">About</a></li>
             <li *ngIf="!isLoggedIn">
-                <a  [routerLink]="['/login']">Log In</a></li>
+                <a [routerLink]="['/login']">Log In</a></li>
             <li *ngIf="isLoggedIn">
-                <a style="color: chocolate; cursor: pointer;" (click)="logOut()">Log Out</a></li>
+                <a style="color: rgb(255,204,255); cursor: pointer;" (click)="logOut()">Log Out</a></li>
         </ul>
     </div>
+</nav>
+</div>
+<nav class="navbar">
+    <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+    <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link dist" [routerLink]="['/about']">About</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/login']">Log In</a></li>
+        <li class="nav-item"><a class="nav-link dist" [routerLink]="['/welcome']">Home</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/products']">Product List</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/layout-one']">Layout-1</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/layout-two']">Layout-2</a></li>
+        <li class="nav-item"><a class="nav-link"[routerLink]="['/layout-three']">Layout-3</a></li>
+        
 
-    <nav class="navbar">
-        <div class="hamburger-menu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-        </div>
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" [routerLink]="['/welcome']">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Product List</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Add Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" [routerLink]="['/login']">Log In</a></li>
+    </ul>
 
-        </ul>
-
-    </nav>
 </nav>
